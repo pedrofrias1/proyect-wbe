@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* animations */
+.card-scroller {
+    animation: card 0.9s;
+}
+  
+@keyframes card {
+    from {
+      transform: translateX(-500px);
+  
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+
+
+
+/* nav */
+.logo-png{
+    width: 120px;
+}
+/* header */
+h2{
+  box-shadow: 4px 3px 3px  rgb(168 162 158);
+}
+.img-projects{
+    width: 550px;
+}
+.hedaer-div-frias-social{
+    padding: 100px 5px;
+}
+.icons-social:hover{
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, .4));
+}
+
+/* main */
+.card-trabajo-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+  grid-template-rows: repeat(2,1fr);
+}
+
+.card-trabajo-card{
+  width: 520px;
+  height: 130px;
+  border: 2px solid gray;
+  border-left: 10px rgb(248 113 113) solid;
+  border-radius: 16px;
+}
+
+
+
+/* contacto */
+textarea{
+  resize: none;
+}
+.field .item{
+  background:transparent;
+  border: 2px solid #ccc;
+  outline: none;
+  margin: 12px 0;
+}
+.field.error .item{
+  border-color: #d93025;
+}
+
+.field .error-txt{
+  font-size: 14.5px;
+  color: #d93025;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+
+}
+
+.field .error .error-txt{
+  display: block;
+}
+
+.not{
+  font-size: 14.5px;
+  color: #d93025;
+}
+
+.yes{
+  font-size: 14.5px;
+  color: rgb(17, 134, 17);
+}
